@@ -108,4 +108,27 @@ using namespace std;
 //     }
 // }
 
+/// Problem 6
+// int main() {
+//     int message = 42;
+//     int *ptr;
+//     ptr = &message;
+//
+//     cout << "Secret Message: " << *ptr << endl;
+//
+//     return 0;
+// }
+
 /// Problem 7
+float calculateAverage(int *arr,int size) {
+    float sum = *arr;
+    for (int i = 1; i < size; i++) {
+        sum += *(arr + i);
+    }
+    return sum / size;
+}
+
+int main() {
+    int scores[]= {88,76,90,85,92};
+    cout << calculateAverage(&scores[0],5);
+}
