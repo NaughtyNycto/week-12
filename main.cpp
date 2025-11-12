@@ -159,3 +159,30 @@ using namespace std;
 // }
 
 /// Problem 11
+// int main() {
+//     int scores[] = {78, 95, 85, 62, 88};
+//     int size = 5;
+//
+//     int *first = &scores[0];
+//     int *second = &scores[0];
+//     int *third = &scores[0];
+//
+//     for (int i = 0; i < size; i++) {
+//         if (*(scores + i) > *first) {
+//             third = second;
+//             second = first;
+//             first = scores + i;
+//         }
+//         else if (*(scores + i) > *second && (scores + i) != first) {
+//             third = second;
+//             second = scores + i;
+//         }
+//         else if (*(scores + i) > *third && (scores + i) != second && (scores + i) != first) {
+//             third = scores + i;
+//         }
+//     }
+//
+//     cout << "Top 3 Scores: " << *first << " " << *second << " " << *third << endl;
+//
+//     return 0;
+// }
