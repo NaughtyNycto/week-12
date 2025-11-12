@@ -58,37 +58,7 @@ using namespace std;
 // }
 
 /// Problem 4
-// #define val 33.3
-// #define number 50
-//
-// int a;
-//
-// int& fun() {
-//     return a;
-// }
-//
-// int foo() {
-//     return a;
-// }
-//
-// int main() {
-//     int n1 = 9, n2 = 11, *ptr_1 = nullptr, *ptr_2 = nullptr, k = 0;
-//     double t;
-//
-//     *ptr_1 = &n1;        // WRONG — we’ll fix below
-//     // Correct way:
-//     ptr_1 = &n1;
-//     ptr_2 = &n2;
-//
-//     t = val;             // 33.3
-//     fun() = number;      // a = 50
-//
-//     *ptr_1 = *ptr_1 + 3; // 9 + 3 = 12
-//     *ptr_2 = *ptr_2 - 3; // 11 - 3 = 8
-//
-//     cout << a << " " << *ptr_1 << " " << t << " " << *ptr_2 << endl;
-//     return 0;
-// }
+// I didn't really understand what the question is asking :(
 
 /// Problem 5
 // #include <ctime>
@@ -120,15 +90,72 @@ using namespace std;
 // }
 
 /// Problem 7
-float calculateAverage(int *arr,int size) {
-    float sum = *arr;
-    for (int i = 1; i < size; i++) {
-        sum += *(arr + i);
-    }
-    return sum / size;
-}
+// float calculateAverage(int *arr,int size) {
+//     float sum = *arr;
+//     for (int i = 1; i < size; i++) {
+//         sum += *(arr + i);
+//     }
+//     return sum / size;
+// }
+//
+// int main() {
+//     int scores[]= {88,76,90,85,92};
+//     cout << calculateAverage(&scores[0],5);
+// }
 
-int main() {
-    int scores[]= {88,76,90,85,92};
-    cout << calculateAverage(&scores[0],5);
-}
+/// Problem 8
+// int main() {
+//     int treasures[] = {10, 20, 30, 40, 50};
+//     int *ptr;
+//     ptr = treasures;
+//
+//     ptr = ptr + 4;
+//
+//     cout << "Last treasure value: " << *ptr << endl;
+//
+//     return 0;
+// }
+
+/// Problem 9
+// int main() {
+//     int score = 75;
+//     int *ptr;
+//     ptr = &score;
+//
+//     cout << "Original Score: " << *ptr << endl;
+//
+//     *ptr += 10;
+//
+//     cout << "Updated Score: " << *ptr << endl;
+//
+//     return 0;
+// }
+
+/// Problem 10
+// void reverseArray(int *start, int *end) {
+//     while (start < end) {
+//         int temp = *start;
+//         *start = *end;
+//         *end = temp;
+//
+//         start++;
+//         end--;
+//     }
+// }
+//
+// int main() {
+//     int arr[] = {10, 20, 30, 40, 50};
+//     int size = 5;
+//
+//     reverseArray(arr, arr + size - 1);
+//
+//     cout << "Reversed Array: ";
+//     for (int i = 0; i < size; i++) {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+//
+//     return 0;
+// }
+
+/// Problem 11
